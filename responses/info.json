@@ -271,9 +271,9 @@
 		},
 		{
 			"type": "default",
-			"name": "Urban Case",
+			"name": "CustomOpener",
 			"translatedName": {
-				"polish": "Miejska Skrzynia",
+				"polish": "CustomOpener",
 				"russian": "Городской Кейс",
 				"chinesesimplified": "市区武器箱"
 			},
@@ -293,94 +293,28 @@
 			"trialAvailable": 0,
 			"skins": [
 				{
-					"weapon": "Skeleton Knife",
-					"skin": "Urban Masked",
+					"weapon": "Karambit",
+					"skin": "Case Hardened",
 					"rarity": 6,
-					"chances": 1
+					"chances": 25
 				},
 				{
-					"weapon": "M4A1-S",
-					"skin": "Imminent Danger",
-					"rarity": 5,
-					"chances": 1
+					"weapon": "AWP",
+					"skin": "Dragon Lore",
+					"rarity": 6,
+					"chances": 25
 				},
 				{
-					"weapon": "M4A1-S",
-					"skin": "Master Piece",
-					"rarity": 4,
-					"chances": 6
+					"weapon": "M4A4",
+					"skin": "Howl",
+					"rarity": 6,
+					"chances": 25
 				},
 				{
-					"weapon": "Glock-18",
-					"skin": "Snack Attack",
-					"rarity": 4,
-					"chances": 6
-				},
-				{
-					"weapon": "XM1014",
-					"skin": "XOXO",
-					"rarity": 4,
-					"chances": 6
-				},
-				{
-					"weapon": "P90",
-					"skin": "Nostalgia",
-					"rarity": 4,
-					"chances": 6
-				},
-				{
-					"weapon": "UMP-45",
-					"skin": "Momentum",
-					"rarity": 4,
-					"chances": 6
-				},
-				{
-					"weapon": "UMP-45",
-					"skin": "Moonrise",
-					"rarity": 3,
-					"chances": 8
-				},
-				{
-					"weapon": "MAG-7",
-					"skin": "Bulldozer",
-					"rarity": 3,
-					"chances": 8
-				},
-				{
-					"weapon": "Glock-18",
-					"skin": "Moonrise",
-					"rarity": 3,
-					"chances": 8
-				},
-				{
-					"weapon": "UMP-45",
-					"skin": "Moonrise",
-					"rarity": 3,
-					"chances": 8
-				},
-				{
-					"weapon": "P90",
-					"skin": "Freight",
-					"rarity": 2,
-					"chances": 9
-				},
-				{
-					"weapon": "Sticker",
-					"skin": "Pigeon Master",
-					"rarity": 2,
-					"chances": 9
-				},
-				{
-					"weapon": "Five-SeveN",
-					"skin": "Urban Hazard",
-					"rarity": 2,
-					"chances": 9
-				},
-				{
-					"weapon": "Desert Eagle",
-					"skin": "Urban DDPAT",
-					"rarity": 1,
-					"chances": 9
+					"weapon": "AWP",
+					"skin": "Gungnir",
+					"rarity": 6,
+					"chances": 25
 				}
 			],
 			"receive": [
