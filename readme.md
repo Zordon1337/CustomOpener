@@ -17,4 +17,6 @@ node .
 ![image](https://github.com/Zordon1337/CustomOpener/assets/65111609/c83f64eb-68eb-4768-ad9e-333ee841eab4)
 (custom katowice 2014 sticker capsule :trollface:)
 ![image](https://github.com/Zordon1337/CustomOpener/assets/65111609/9e7a3257-49cd-4101-b542-a2d3f692a83b)
+(only gold)
+![image](https://github.com/Zordon1337/CustomOpener/assets/65111609/f74f02ee-4421-478d-bebf-4cdb53c208e4)
 
