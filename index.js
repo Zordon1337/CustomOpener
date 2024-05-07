@@ -15,17 +15,6 @@ app.get('/getInfo.php', (req, res) => {
       return;
     }
     const info = JSON.parse(data);
-    res.json(info);
-  });
-});
-app.get('/getInfo.php', (req, res) => {
-  fs.readFile('./responses/info.json', 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading file:', err);
-      res.status(500).json({ error: 'Internal Server Error' });
-      return;
-    }
-    const info = JSON.parse(data);
     fs.readFile('./responses/customcases.json', 'utf8', (err, customCasesData) => {
       if (err) {
         console.error('Error reading file:', err);
@@ -38,6 +27,17 @@ app.get('/getInfo.php', (req, res) => {
     });
   });
 });
+app.get('/auth/getForbiddenWords.php', (req, res) => {
+    fs.readFile('./responses/forbiddenwords.json', 'utf8', (err, data) => {
+      if (err) {
+        console.error('Error reading file:', err);
+        res.status(500).json({ error: 'Internal Server Error' });
+        return;
+      }
+      const info = JSON.parse(data);
+      res.json(info);
+    });
+  });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
