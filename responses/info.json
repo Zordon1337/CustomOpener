@@ -1,0 +1,642 @@
+{
+	"timestamp": 1715112781,
+	"facebookURL": "https://www.facebook.com/efezgames",
+	"instagramURL": "https://www.instagram.com/efez_games/",
+	"steamURL": "https://steamcommunity.com/groups/case_opener",
+	"donateURL": "https://steamcommunity.com/tradeoffer/new/?partner=74142667&token=6PvEkrKd",
+	"saveInterval": 200,
+	"sale": 0,
+	"cloudSave": 1,
+	"priceServerURL": "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=",
+	"promoCodesURL": "https://api.efezgames.com/v1/users/redeemCode",
+	"jackpotURL": "https://api.efezgames.com/endpoints/jackpotConverter.php?limit=30&expensive_treshold=35&expensive_count=",
+	"jackpotURLV2": "https://api.efezgames.com/php_redis/search.php?mode=cheap_expensive&expensive_treshold=3500&expensive_count={count}&version={version}",
+	"currencyURL": "https://api.fixer.io/latest",
+	"rareSkinsURL": "https://www.jakpok.com/RoboticaBallWeb/rareData.json",
+	"skinLimit": 2000,
+	"jackpotMaxBet": 7500,
+	"doubleRoundTime": 30,
+	"rewardedVideoCooldown": 5,
+	"rewardedVideoCasesCount": 1,
+	"giftCodes": 1,
+	"dailyRewards": 1,
+	"previewURL": "https://csgostash.com/img/skins/large_1920/{ID}.png",
+	"helpURL": "https://api.efezgames.com/help/index.php?data={data}",
+	"sendIntervalTime": 300,
+	"sendIntervalExecuteTime": 120,
+	"sendErrorIntervalTime": 120,
+	"getErrorIntervalTime": 60,
+	"accessTokenFailSleepTime": 15,
+	"tradeInvitationValidTime": 60,
+	"rankRequiredForTrade": 4,
+	"sendScreenInfoFirebase": 1,
+	"surveyActive": true,
+	"displayPriceOnPremiumBuyButton": true,
+	"bombDefuseActive": true,
+	"revolverActive": false,
+	"premium_imgs": {
+		"id": 7,
+		"buttonColor": "#e4ab33",
+		"english": "https://www.jakpok.com/RoboticaBallWeb/premium_8_en.png",
+		"polish": "https://www.jakpok.com/RoboticaBallWeb/premium_8_pl.png",
+		"russian": "https://www.jakpok.com/RoboticaBallWeb/premium_8_ru.png"
+	},
+	"questions": [],
+	"invitations": {
+		"english": {
+			"title": "Try Case Opener!",
+			"message": "Open CSGO cases on your phone! Use this link and receive extra cases #caseopener #csgo"
+		},
+		"russian": {
+			"title": "Попробуй CaseOpener!",
+			"message": "Открывай кейсы CSGO на своём телефоне! Воспользуйся этой ссылкой и получи дополнительные кейсы #caseopener #csgo #ксго"
+		},
+		"polish": {
+			"title": "Sprawdz Case Openera!",
+			"message": "Otwieraj skrzynki z CSGO na swoim telefonie! Uzyj tego linku i odbierz dodatkowe skrzynki #caseopener #csgo"
+		},
+		"chinesesimplified": {
+			"title": "CSGO免费开箱模拟器",
+			"message": "在您的手机上打开CSGO武器箱！使用此链接并接收更多武器箱#caseopener #csgo"
+		}
+	},
+	"club": {
+		"active": false,
+		"button_text": {
+			"english": "Start for free",
+			"polish": "Rozpocznij za darmo",
+			"russian": "Начать бесплатно"
+		},
+		"button_color": "#608F37"
+	},
+	"dailyNotification": {
+		"english": {
+			"title": "New daily spin is ready! 🎁",
+			"message": "Don't miss your chance for free knife - open Case Opener and spin"
+		},
+		"polish": {
+			"title": "Codzienna nagroda czeka na Ciebie! 🎁",
+			"message": "Nie przegap szansy na darmowy nóż - otwórz Case Openera i zakręć kołem"
+		},
+		"russian": {
+			"title": "Новый ежедневный спин готов! 🎁",
+			"message": "Не упусти свой шанс получить бесплатный нож - открой Case Opener и крутани колесом"
+		},
+		"chinesesimplified": {
+			"title": "新的每日转盘已经准备好! 🎁",
+			"message": "不要错过获得免费刀具的机会 – 打开Case Opener并进行旋转"
+		}
+	},
+	"rewardedVideoMysteryActive": false,
+	"rewardedVideoMysteryAdditionalAsk": true,
+	"scratchcards": {
+		"active": true,
+		"slots": [
+			{
+				"type": "FREE",
+				"amount": 1,
+				"interval": 2
+			},
+			{
+				"type": "AD",
+				"amount": 1,
+				"interval": 5
+			},
+			{
+				"type": "IAP",
+				"iapName": "scratchcards1",
+				"normalScratchcards": 0,
+				"goldenScratchcards": 25,
+				"description": {
+					"english": "<color=yellow>MEGA BUNDLE</color>/n25 GOLDEN",
+					"polish": "<color=yellow>MEGA PACZKA</color>/n25 ZŁOTYCH ZDRAPEK",
+					"russian": "<color=yellow>МЕГА ПАК</color>/n25 золотых скретч-карт"
+				}
+			}
+		]
+	},
+	"newest_version": "2.30.4",
+	"newest_version_lore": "Added Anubis Package",
+	"new_ad_delay": 150,
+	"offerWall": "none",
+	"currencyURLV2": "https://api.nbp.pl/api/exchangerates/tables/A/?format=json",
+	"ads": [
+		{
+			"campaignID": "005",
+			"date": "32/03",
+			"img_url": "http://www.jakpok.com/RoboticaBallWeb/TRADES.jpg",
+			"url": "http://bit.ly/caseopener_trades?utm_source=menu_banner&utm_medium=banner",
+			"lang": "all"
+		}
+	],
+	"premiumOffer": {
+		"id": 9,
+		"english": "https://www.jakpok.com/RoboticaBallWeb/premium_9_en.png",
+		"polish": "https://www.jakpok.com/RoboticaBallWeb/premium_9_pl.png",
+		"russian": "https://www.jakpok.com/RoboticaBallWeb/premium_9_ru.png",
+		"showPrice": true,
+		"priceX": 0.5,
+		"priceY": 0.14,
+		"priceSize": 33,
+		"priceColor": "#fefefe"
+	},
+	"mysteryPackages": [
+		{
+			"type": "MYSTERY10",
+			"sale": false,
+			"aura": false,
+			"buttonColor": "#608F37",
+			"buttonTextColor": "#FEFEFE"
+		},
+		{
+			"type": "MYSTERY35",
+			"sale": false,
+			"aura": false,
+			"buttonColor": "#608F37",
+			"buttonTextColor": "#FEFEFE",
+			"description": {
+				"english": "5 for free",
+				"polish": "5 za darmo",
+				"russian": "5 бесплатно"
+			}
+		},
+		{
+			"type": "MYSTERY100",
+			"sale": false,
+			"aura": true,
+			"buttonColor": "#608F37",
+			"buttonTextColor": "#FEFEFE",
+			"description": {
+				"english": "Best offer!",
+				"polish": "Najlepsza oferta!",
+				"russian": "Лучшее предложение!"
+			}
+		}
+	],
+	"mysteryPackagesIAPs": [
+		{
+			"type": "MYSTERY10",
+			"sale": false,
+			"featured": false,
+			"description": {
+				"english": "",
+				"polish": "",
+				"russian": ""
+			}
+		},
+		{
+			"type": "MYSTERY35",
+			"sale": false,
+			"featured": true,
+			"description": {
+				"english": "5 for free!",
+				"polish": "5 za darmo!",
+				"russian": "5 бесплатно"
+			}
+		},
+		{
+			"type": "MYSTERY100",
+			"sale": false,
+			"featured": true,
+			"description": {
+				"english": "Mega offer!",
+				"polish": "Najlepsza oferta!",
+				"russian": "Лучшее предложение!"
+			}
+		}
+	],
+
+	"boostedOpening": {
+		"active": true,
+		"freeTrial": 5,
+		"slot1": {
+			"sale": false
+		},
+		"slot2": {
+			"type": "coins",
+            "price": -10000000,
+            "amount": 1000
+		},
+		"slot3": {
+			"type": "IAP",
+			"amount": 100,
+			"iapName": "boosters1",
+			"sale": false
+		}
+	},
+	"crosspromotion": {
+		"name": "Cosmos",
+		"game_url": "https://play.google.com/store/apps/details?id=com.efezgames.cosmoscombos",
+		"image_on_start": 0,
+		"horizontal_img_url": "https://drive.google.com/uc?export=download&id=0BzI9yROTQbzAYW1nZ2tFSmMyRGs",
+		"download_campaign": 0,
+		"package_id": "com.efezgames.cosmoscombos",
+		"reward_count": 12,
+		"logo_url": "https://lh3.googleusercontent.com/R2c9aGQvXj7exCEG2MoEmHuMikOcvyL-R3dk6O-DP0IeBRlVK8NGndb607UEC1BDyO4=w300"
+	},
+	"customCases": [
+		{
+			"type": "sticker",
+			"name": "Pinups Capsule",
+			"translatedName": {
+				"chinesesimplified": "海报女郎胶囊",
+				"russian": "Капсула с наклейками «Красотки»",
+				"polish": "Pojemnik z naklejką pin-up"
+			},
+			"id": "pinupscapsule",
+			"iconURL": "https://www.jakpok.com/RoboticaBallWeb/sticker_pinups.png",
+			"tag": "",
+			"baseColor": "#ffffff",
+			"showKnives": 1,
+			"showPercent": 1,
+			"minimalVersion": "2.4.0",
+			"platforms": "android|iphoneplayer",
+			"endTime": 1715371200,
+			"premium_only": 0,
+			"skins": [
+				{
+					"weapon": "Sticker",
+					"skin": "Titan (Holo)",
+					"rarity": 3,
+					"chances": 100
+				}
+			],
+			"receive": [
+				{
+					"type": "coins",
+					"price": -10000000,
+                    "amount": 1000
+				}
+			]
+		},
+		{
+			"type": "default",
+			"name": "Urban Case",
+			"translatedName": {
+				"polish": "Miejska Skrzynia",
+				"russian": "Городской Кейс",
+				"chinesesimplified": "市区武器箱"
+			},
+			"id": "urbanCase",
+			"iconURL": "https://www.jakpok.com/RoboticaBallWeb/urbanCase-small.png",
+			"tag": "CUSTOM",
+			"baseColor": "#ffffff",
+			"showKnives": 0,
+			"showPercent": 1,
+			"minimalVersion": "2.5.0",
+			"platforms": "android|iphoneplayer",
+			"endTime": 1715182200,
+			"sideBanner": "",
+			"sideBannerTarget": "",
+			"cornerLabel": "",
+			"premium_only": 0,
+			"trialAvailable": 0,
+			"skins": [
+				{
+					"weapon": "Skeleton Knife",
+					"skin": "Urban Masked",
+					"rarity": 6,
+					"chances": 1
+				},
+				{
+					"weapon": "M4A1-S",
+					"skin": "Imminent Danger",
+					"rarity": 5,
+					"chances": 1
+				},
+				{
+					"weapon": "M4A1-S",
+					"skin": "Master Piece",
+					"rarity": 4,
+					"chances": 6
+				},
+				{
+					"weapon": "Glock-18",
+					"skin": "Snack Attack",
+					"rarity": 4,
+					"chances": 6
+				},
+				{
+					"weapon": "XM1014",
+					"skin": "XOXO",
+					"rarity": 4,
+					"chances": 6
+				},
+				{
+					"weapon": "P90",
+					"skin": "Nostalgia",
+					"rarity": 4,
+					"chances": 6
+				},
+				{
+					"weapon": "UMP-45",
+					"skin": "Momentum",
+					"rarity": 4,
+					"chances": 6
+				},
+				{
+					"weapon": "UMP-45",
+					"skin": "Moonrise",
+					"rarity": 3,
+					"chances": 8
+				},
+				{
+					"weapon": "MAG-7",
+					"skin": "Bulldozer",
+					"rarity": 3,
+					"chances": 8
+				},
+				{
+					"weapon": "Glock-18",
+					"skin": "Moonrise",
+					"rarity": 3,
+					"chances": 8
+				},
+				{
+					"weapon": "UMP-45",
+					"skin": "Moonrise",
+					"rarity": 3,
+					"chances": 8
+				},
+				{
+					"weapon": "P90",
+					"skin": "Freight",
+					"rarity": 2,
+					"chances": 9
+				},
+				{
+					"weapon": "Sticker",
+					"skin": "Pigeon Master",
+					"rarity": 2,
+					"chances": 9
+				},
+				{
+					"weapon": "Five-SeveN",
+					"skin": "Urban Hazard",
+					"rarity": 2,
+					"chances": 9
+				},
+				{
+					"weapon": "Desert Eagle",
+					"skin": "Urban DDPAT",
+					"rarity": 1,
+					"chances": 9
+				}
+			],
+			"receive": [
+				{
+					"type": "coins",
+					"price": -10000000,
+                    "amount": 1000
+				}
+			]
+		},
+		{
+			"type": "default",
+			"name": "Wasteland Case",
+			"translatedName": {
+				"polish": "Skrzynia Pustkowia",
+				"russian": "Кейс Пустоши",
+				"chinesesimplified": "荒原武器箱"
+			},
+			"id": "wastelandCase",
+			"iconURL": "https://www.jakpok.com/RoboticaBallWeb/wastelandCase-small.png",
+			"tag": "CUSTOM",
+			"baseColor": "#b0451d",
+			"showKnives": 0,
+			"showPercent": 1,
+			"minimalVersion": "1.9.0",
+			"platforms": "android|iphoneplayer",
+			"endTime": 1715182200,
+			"sideBanner": "",
+			"sideBannerTarget": "",
+			"cornerLabel": "",
+			"premium_only": 0,
+			"trialAvailable": 0,
+			"skins": [
+				{
+					"weapon": "M9 Bayonet",
+					"skin": "Rust Coat",
+					"rarity": 6,
+					"chances": 1
+				},
+				{
+					"weapon": "Huntsman Knife",
+					"skin": "Slaughter",
+					"rarity": 6,
+					"chances": 1
+				},
+				{
+					"weapon": "Hand Wraps",
+					"skin": "Desert Shamagh",
+					"rarity": 5,
+					"chances": 1
+				},
+				{
+					"weapon": "AK-47",
+					"skin": "Wasteland Rebel",
+					"rarity": 5,
+					"chances": 3
+				},
+				{
+					"weapon": "Glock-18",
+					"skin": "Wasteland Rebel",
+					"rarity": 5,
+					"chances": 3
+				},
+				{
+					"weapon": "Galil AR",
+					"skin": "Chatterbox",
+					"rarity": 5,
+					"chances": 3
+				},
+				{
+					"weapon": "SSG 08",
+					"skin": "Death Strike",
+					"rarity": 4,
+					"chances": 4
+				},
+				{
+					"weapon": "MAC-10",
+					"skin": "Hot Snakes",
+					"rarity": 4,
+					"chances": 4
+				},
+				{
+					"weapon": "SG 553",
+					"skin": "Colony IV",
+					"rarity": 4,
+					"chances": 7
+				},
+				{
+					"weapon": "G3SG1",
+					"skin": "The Executioner",
+					"rarity": 4,
+					"chances": 7
+				},
+				{
+					"weapon": "Sawed-Off",
+					"skin": "Wasteland Princess",
+					"rarity": 4,
+					"chances": 7
+				},
+				{
+					"weapon": "AK-47",
+					"skin": "Rat Rod",
+					"rarity": 3,
+					"chances": 11
+				},
+				{
+					"weapon": "FAMAS",
+					"skin": "Styx",
+					"rarity": 3,
+					"chances": 11
+				},
+				{
+					"weapon": "Negev",
+					"skin": "Loudmouth",
+					"rarity": 3,
+					"chances": 11
+				},
+				{
+					"weapon": "FAMAS",
+					"skin": "Survivor Z",
+					"rarity": 2,
+					"chances": 13
+				},
+				{
+					"weapon": "Tec-9",
+					"skin": "Toxic",
+					"rarity": 2,
+					"chances": 13
+				}
+			],
+			"receive": [
+				{
+					"type": "coins",
+					"price": -10000000,
+                    "amount": 1000
+				}
+			]
+		},
+		{
+			"type": "premium",
+			"name": "Dragon Case",
+			"translatedName": {
+				"polish": "Smocza Skrzynia",
+				"russian": "Драконий Кейс",
+				"chinesesimplified": "神龙武器箱"
+			},
+			"id": "dragonCase2",
+			"iconURL": "https://www.jakpok.com/RoboticaBallWeb/dragonCase2-small.png",
+			"tag": "PREMIUM",
+			"baseColor": "#be2100",
+			"showKnives": 1,
+			"showPercent": 1,
+			"minimalVersion": "1.9.0",
+			"platforms": "android|iphoneplayer",
+			"endTime": 1715182200,
+			"sideBanner": "",
+			"sideBannerTarget": "",
+			"cornerLabel": "",
+			"premium_only": 0,
+			"trialAvailable": 0,
+			"skins": [
+				{
+					"weapon": "AWP",
+					"skin": "Dragon Lore",
+					"rarity": 5,
+					"chances": 6
+				},
+				{
+					"weapon": "Sticker",
+					"skin": "Howling Dawn",
+					"rarity": 5,
+					"chances": 6
+				},
+				{
+					"weapon": "AWP",
+					"skin": "Wildfire",
+					"rarity": 5,
+					"chances": 6
+				},
+				{
+					"weapon": "SSG 08",
+					"skin": "Dragonfire",
+					"rarity": 5,
+					"chances": 6
+				},
+				{
+					"weapon": "P2000",
+					"skin": "Fire Elemental",
+					"rarity": 5,
+					"chances": 6
+				},
+				{
+					"weapon": "P90",
+					"skin": "Emerald Dragon",
+					"rarity": 4,
+					"chances": 8
+				},
+				{
+					"weapon": "Desert Eagle",
+					"skin": "Kumicho Dragon",
+					"rarity": 4,
+					"chances": 8
+				},
+				{
+					"weapon": "Sticker",
+					"skin": "Dragon Lore (Foil)",
+					"rarity": 4,
+					"chances": 8
+				},
+				{
+					"weapon": "P2000",
+					"skin": "Imperial Dragon",
+					"rarity": 4,
+					"chances": 8
+				},
+				{
+					"weapon": "Desert Eagle",
+					"skin": "Blaze",
+					"rarity": 3,
+					"chances": 9
+				},
+				{
+					"weapon": "Glock-18",
+					"skin": "Dragon Tattoo",
+					"rarity": 3,
+					"chances": 9
+				},
+				{
+					"weapon": "AUG",
+					"skin": "Hot Rod",
+					"rarity": 2,
+					"chances": 10
+				},
+				{
+					"weapon": "Dual Berettas",
+					"skin": "Dualing Dragons",
+					"rarity": 2,
+					"chances": 10
+				}
+			],
+			"receive": [
+				{
+					"type": "coins",
+					"price": -10000000,
+                    "amount": 1000
+				}
+			]
+		}
+	],
+	"minigamesStats": {
+		"tower": 1,
+		"jackpot": 1,
+		"bombDefuse": 1,
+		"crash": 1,
+		"double": 1
+	},
+	"userIP": "127.0.0.1",
+	"dev": false
+}
