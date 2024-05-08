@@ -6,6 +6,8 @@ i need to make proper readme some day
 git clone https://github.com/Zordon1337/CustomOpener
 cd CustomOpener
 npm install
+cp example_config.json config.json
+nano config.json // edit it how you want
 node .
 ```
 ### now you need to redirect api.efezgames.com to your custom endpoint(edit hosts file or use fiddler and proxy)
