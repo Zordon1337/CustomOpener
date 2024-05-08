@@ -2,7 +2,20 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-
+const config = require("./config.json");
+function LoadCustomCases(info)
+{
+  fs.readFile('./responses/customcases.json', 'utf8', (err, customCasesData) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      res.status(500).json({ error: 'Internal Server Error' });
+      return;
+    }
+    const customCases = JSON.parse(customCasesData);
+    info.customCases = customCases;
+    
+  });
+}
 app.use((req, res, next) => {
   console.log(`Path: ${req.path}, Time: ${new Date().toISOString()}`);
   next();
@@ -15,16 +28,11 @@ app.get('/getInfo.php', (req, res) => {
       return;
     }
     const info = JSON.parse(data);
-    fs.readFile('./responses/customcases.json', 'utf8', (err, customCasesData) => {
-      if (err) {
-        console.error('Error reading file:', err);
-        res.status(500).json({ error: 'Internal Server Error' });
-        return;
-      }
-      const customCases = JSON.parse(customCasesData);
-      info.customCases = customCases;
-      res.json(info);
-    });
+    if(config.CustomCases)
+    {
+        LoadCustomCases(info);
+    }
+    res.json(info);
   });
 });
 app.get('/auth/getForbiddenWords.php', (req, res) => {

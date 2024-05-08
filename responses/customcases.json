@@ -65,27 +65,31 @@
             {
                 "weapon": "AWP",
                 "skin": "Dragon Lore",
-                "rarity": 6,
+                "rarity": 5,
                 "chances": 25
             },
             {
                 "weapon": "M4A4",
                 "skin": "Howl",
-                "rarity": 6,
+                "rarity": 5,
                 "chances": 25
             },
             {
                 "weapon": "AWP",
                 "skin": "Gungnir",
-                "rarity": 6,
+                "rarity": 5,
                 "chances": 25
             }
         ],
         "receive": [
             {
                 "type": "coins",
-                "price": -100000,
+                "price": 420,
                 "amount": 1000
+            },
+            {
+                "type": "AD",
+                "amount": 100000
             }
         ]
     },
@@ -212,7 +216,7 @@
         "receive": [
             {
                 "type": "coins",
-                "price": -100000,
+                "price": 420,
                 "amount": 1000
             }
         ]
@@ -322,7 +326,7 @@
         "receive": [
             {
                 "type": "coins",
-                "price": -100000,
+                "price": 420,
                 "amount": 1000
             }
         ]
