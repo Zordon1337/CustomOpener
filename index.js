@@ -46,7 +46,7 @@ app.get('/auth/getForbiddenWords.php', (req, res) => {
       res.json(info);
     });
   });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || config.port;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
