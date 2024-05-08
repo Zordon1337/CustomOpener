@@ -13,7 +13,7 @@ function LoadCustomCases(info)
     }
     const customCases = JSON.parse(customCasesData);
     info.customCases = customCases;
-    
+    res.json(info)
   });
 }
 app.use((req, res, next) => {
@@ -31,8 +31,10 @@ app.get('/getInfo.php', (req, res) => {
     if(config.CustomCases)
     {
         LoadCustomCases(info);
+    } else {
+      res.json(info);
     }
-    res.json(info);
+    
   });
 });
 app.get('/auth/getForbiddenWords.php', (req, res) => {
