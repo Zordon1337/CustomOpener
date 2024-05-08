@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const app = express();
 const config = require("./config.json");
-function LoadCustomCases(info)
+function LoadCustomCases(info,res)
 {
   fs.readFile('./responses/customcases.json', 'utf8', (err, customCasesData) => {
     if (err) {
@@ -30,7 +30,7 @@ app.get('/getInfo.php', (req, res) => {
     const info = JSON.parse(data);
     if(config.CustomCases)
     {
-        LoadCustomCases(info);
+        LoadCustomCases(info,res);
     } else {
       res.json(info);
     }
