@@ -1,6 +1,6 @@
 # CustomOpener - Backend emulator for Case Opener
 i need to make proper readme some day
-
+# this is last version that didin't use db, its no longer updated
 # How to set up:
 ```
 git clone https://github.com/Zordon1337/CustomOpener
