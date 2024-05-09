@@ -86,10 +86,6 @@
                 "type": "coins",
                 "price": 420,
                 "amount": 1000
-            },
-            {
-                "type": "AD",
-                "amount": 100000
             }
         ]
     },

@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const app = express();
 const config = require("./config.json");
+const db = require("./db/manager.js");
 function LoadCustomCases(info,res)
 {
   fs.readFile('./responses/customcases.json', 'utf8', (err, customCasesData) => {
@@ -50,5 +51,6 @@ app.get('/auth/getForbiddenWords.php', (req, res) => {
   });
 const PORT = process.env.PORT || config.port;
 app.listen(PORT, () => {
+  db.InitDB()
   console.log(`Server is running on port ${PORT}`);
 });

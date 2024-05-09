@@ -1,5 +1,11 @@
 {
+    "domain":"http://localhost:3000",
     "port":3000,
     "BypassPremium":true,
-    "CustomCases":true
+    "CustomCases":true,
+    "dbhost":"localhost",
+    "dbuser":"root",
+    "dbpass":"",
+    "dbname":"customopener",
+    "casestable":"CREATE TABLE IF NOT EXISTS `customopener`.`cases` (`type` TEXT NOT NULL , `name` TEXT NOT NULL , `id` TEXT NOT NULL , `iconURL` TEXT NOT NULL , `tag` TEXT NOT NULL , `baseColor` TEXT NOT NULL , `showKnives` INT NOT NULL , `showPercent` INT NOT NULL , `minimalVersion` TEXT NOT NULL , `platforms` TEXT NOT NULL , `endTime` INT NOT NULL , `sideBanner` TEXT NOT NULL , `sideBannerTarget` TEXT NOT NULL , `cornerLabel` TEXT NOT NULL , `premium_only` INT NOT NULL , `trialAvailable` INT NOT NULL , `skins` TEXT NOT NULL ) ENGINE = InnoDB;"
 }
