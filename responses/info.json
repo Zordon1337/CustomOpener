@@ -1,11 +1,11 @@
 {
-	"timestamp": 1715112781,
+	"timestamp": 1715348457,
 	"facebookURL": "https://www.facebook.com/efezgames",
 	"instagramURL": "https://www.instagram.com/efez_games/",
 	"steamURL": "https://steamcommunity.com/groups/case_opener",
 	"donateURL": "https://steamcommunity.com/tradeoffer/new/?partner=74142667&token=6PvEkrKd",
 	"saveInterval": 200,
-	"sale": 1,
+	"sale": 0,
 	"cloudSave": 1,
 	"priceServerURL": "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=",
 	"promoCodesURL": "https://api.efezgames.com/v1/users/redeemCode",
@@ -13,11 +13,11 @@
 	"jackpotURLV2": "https://api.efezgames.com/php_redis/search.php?mode=cheap_expensive&expensive_treshold=3500&expensive_count={count}&version={version}",
 	"currencyURL": "https://api.fixer.io/latest",
 	"rareSkinsURL": "https://www.jakpok.com/RoboticaBallWeb/rareData.json",
-	"skinLimit": 20000,
+	"skinLimit": 2000,
 	"jackpotMaxBet": 7500,
 	"doubleRoundTime": 30,
-	"rewardedVideoCooldown": 0,
-	"rewardedVideoCasesCount": 0,
+	"rewardedVideoCooldown": 5,
+	"rewardedVideoCasesCount": 1,
 	"giftCodes": 1,
 	"dailyRewards": 1,
 	"previewURL": "https://csgostash.com/img/skins/large_1920/{ID}.png",
@@ -35,85 +35,85 @@
 	"bombDefuseActive": true,
 	"revolverActive": false,
 	"premium_imgs": {
-		"id": 7,
-		"buttonColor": "#e4ab33",
-		"english": "https://www.jakpok.com/RoboticaBallWeb/premium_8_en.png",
-		"polish": "https://www.jakpok.com/RoboticaBallWeb/premium_8_pl.png",
-		"russian": "https://www.jakpok.com/RoboticaBallWeb/premium_8_ru.png"
+	  "id": 7,
+	  "buttonColor": "#e4ab33",
+	  "english": "https://www.jakpok.com/RoboticaBallWeb/premium_8_en.png",
+	  "polish": "https://www.jakpok.com/RoboticaBallWeb/premium_8_pl.png",
+	  "russian": "https://www.jakpok.com/RoboticaBallWeb/premium_8_ru.png"
 	},
 	"questions": [],
 	"invitations": {
-		"english": {
-			"title": "Try Case Opener!",
-			"message": "Open CSGO cases on your phone! Use this link and receive extra cases #caseopener #csgo"
-		},
-		"russian": {
-			"title": "Попробуй CaseOpener!",
-			"message": "Открывай кейсы CSGO на своём телефоне! Воспользуйся этой ссылкой и получи дополнительные кейсы #caseopener #csgo #ксго"
-		},
-		"polish": {
-			"title": "Sprawdz Case Openera!",
-			"message": "Otwieraj skrzynki z CSGO na swoim telefonie! Uzyj tego linku i odbierz dodatkowe skrzynki #caseopener #csgo"
-		},
-		"chinesesimplified": {
-			"title": "CSGO免费开箱模拟器",
-			"message": "在您的手机上打开CSGO武器箱！使用此链接并接收更多武器箱#caseopener #csgo"
-		}
+	  "english": {
+		"title": "Try Case Opener!",
+		"message": "Open CSGO cases on your phone! Use this link and receive extra cases #caseopener #csgo"
+	  },
+	  "russian": {
+		"title": "Попробуй CaseOpener!",
+		"message": "Открывай кейсы CSGO на своём телефоне! Воспользуйся этой ссылкой и получи дополнительные кейсы #caseopener #csgo #ксго"
+	  },
+	  "polish": {
+		"title": "Sprawdz Case Openera!",
+		"message": "Otwieraj skrzynki z CSGO na swoim telefonie! Uzyj tego linku i odbierz dodatkowe skrzynki #caseopener #csgo"
+	  },
+	  "chinesesimplified": {
+		"title": "CSGO免费开箱模拟器",
+		"message": "在您的手机上打开CSGO武器箱！使用此链接并接收更多武器箱#caseopener #csgo"
+	  }
 	},
 	"club": {
-		"active": false,
-		"button_text": {
-			"english": "Start for free",
-			"polish": "Rozpocznij za darmo",
-			"russian": "Начать бесплатно"
-		},
-		"button_color": "#608F37"
+	  "active": false,
+	  "button_text": {
+		"english": "Start for free",
+		"polish": "Rozpocznij za darmo",
+		"russian": "Начать бесплатно"
+	  },
+	  "button_color": "#608F37"
 	},
 	"dailyNotification": {
-		"english": {
-			"title": "New daily spin is ready! 🎁",
-			"message": "Don't miss your chance for free knife - open Case Opener and spin"
-		},
-		"polish": {
-			"title": "Codzienna nagroda czeka na Ciebie! 🎁",
-			"message": "Nie przegap szansy na darmowy nóż - otwórz Case Openera i zakręć kołem"
-		},
-		"russian": {
-			"title": "Новый ежедневный спин готов! 🎁",
-			"message": "Не упусти свой шанс получить бесплатный нож - открой Case Opener и крутани колесом"
-		},
-		"chinesesimplified": {
-			"title": "新的每日转盘已经准备好! 🎁",
-			"message": "不要错过获得免费刀具的机会 – 打开Case Opener并进行旋转"
-		}
+	  "english": {
+		"title": "New daily spin is ready! 🎁",
+		"message": "Don't miss your chance for free knife - open Case Opener and spin"
+	  },
+	  "polish": {
+		"title": "Codzienna nagroda czeka na Ciebie! 🎁",
+		"message": "Nie przegap szansy na darmowy nóż - otwórz Case Openera i zakręć kołem"
+	  },
+	  "russian": {
+		"title": "Новый ежедневный спин готов! 🎁",
+		"message": "Не упусти свой шанс получить бесплатный нож - открой Case Opener и крутани колесом"
+	  },
+	  "chinesesimplified": {
+		"title": "新的每日转盘已经准备好! 🎁",
+		"message": "不要错过获得免费刀具的机会 – 打开Case Opener并进行旋转"
+	  }
 	},
 	"rewardedVideoMysteryActive": false,
 	"rewardedVideoMysteryAdditionalAsk": true,
 	"scratchcards": {
-		"active": true,
-		"slots": [
-			{
-				"type": "FREE",
-				"amount": 1,
-				"interval": 2
-			},
-			{
-				"type": "AD",
-				"amount": 1,
-				"interval": 5
-			},
-			{
-				"type": "IAP",
-				"iapName": "scratchcards1",
-				"normalScratchcards": 0,
-				"goldenScratchcards": 25,
-				"description": {
-					"english": "<color=yellow>MEGA BUNDLE</color>/n25 GOLDEN",
-					"polish": "<color=yellow>MEGA PACZKA</color>/n25 ZŁOTYCH ZDRAPEK",
-					"russian": "<color=yellow>МЕГА ПАК</color>/n25 золотых скретч-карт"
-				}
-			}
-		]
+	  "active": true,
+	  "slots": [
+		{
+		  "type": "FREE",
+		  "amount": 1,
+		  "interval": 2
+		},
+		{
+		  "type": "AD",
+		  "amount": 1,
+		  "interval": 5
+		},
+		{
+		  "type": "IAP",
+		  "iapName": "scratchcards1",
+		  "normalScratchcards": 0,
+		  "goldenScratchcards": 25,
+		  "description": {
+			"english": "\u003Ccolor=yellow\u003EMEGA BUNDLE\u003C/color\u003E/n25 GOLDEN",
+			"polish": "\u003Ccolor=yellow\u003EMEGA PACZKA\u003C/color\u003E/n25 ZŁOTYCH ZDRAPEK",
+			"russian": "\u003Ccolor=yellow\u003EМЕГА ПАК\u003C/color\u003E/n25 золотых скретч-карт"
+		  }
+		}
+	  ]
 	},
 	"newest_version": "2.30.4",
 	"newest_version_lore": "Added Anubis Package",
@@ -121,129 +121,129 @@
 	"offerWall": "none",
 	"currencyURLV2": "https://api.nbp.pl/api/exchangerates/tables/A/?format=json",
 	"ads": [
-		{
-			"campaignID": "005",
-			"date": "32/03",
-			"img_url": "http://www.jakpok.com/RoboticaBallWeb/TRADES.jpg",
-			"url": "http://bit.ly/caseopener_trades?utm_source=menu_banner&utm_medium=banner",
-			"lang": "all"
-		}
+	  {
+		"campaignID": "005",
+		"date": "32/03",
+		"img_url": "http://www.jakpok.com/RoboticaBallWeb/TRADES.jpg",
+		"url": "http://bit.ly/caseopener_trades?utm_source=menu_banner&utm_medium=banner",
+		"lang": "all"
+	  }
 	],
 	"premiumOffer": {
-		"id": 9,
-		"english": "https://www.jakpok.com/RoboticaBallWeb/premium_9_en.png",
-		"polish": "https://www.jakpok.com/RoboticaBallWeb/premium_9_pl.png",
-		"russian": "https://www.jakpok.com/RoboticaBallWeb/premium_9_ru.png",
-		"showPrice": true,
-		"priceX": 0.5,
-		"priceY": 0.14,
-		"priceSize": 33,
-		"priceColor": "#fefefe"
+	  "id": 9,
+	  "english": "https://www.jakpok.com/RoboticaBallWeb/premium_9_en.png",
+	  "polish": "https://www.jakpok.com/RoboticaBallWeb/premium_9_pl.png",
+	  "russian": "https://www.jakpok.com/RoboticaBallWeb/premium_9_ru.png",
+	  "showPrice": true,
+	  "priceX": 0.5,
+	  "priceY": 0.14,
+	  "priceSize": 33,
+	  "priceColor": "#fefefe"
 	},
 	"mysteryPackages": [
-		{
-			"type": "MYSTERY10",
-			"sale": false,
-			"aura": false,
-			"buttonColor": "#608F37",
-			"buttonTextColor": "#FEFEFE"
-		},
-		{
-			"type": "MYSTERY35",
-			"sale": false,
-			"aura": false,
-			"buttonColor": "#608F37",
-			"buttonTextColor": "#FEFEFE",
-			"description": {
-				"english": "5 for free",
-				"polish": "5 za darmo",
-				"russian": "5 бесплатно"
-			}
-		},
-		{
-			"type": "MYSTERY100",
-			"sale": false,
-			"aura": true,
-			"buttonColor": "#608F37",
-			"buttonTextColor": "#FEFEFE",
-			"description": {
-				"english": "Best offer!",
-				"polish": "Najlepsza oferta!",
-				"russian": "Лучшее предложение!"
-			}
+	  {
+		"type": "MYSTERY10",
+		"sale": false,
+		"aura": false,
+		"buttonColor": "#608F37",
+		"buttonTextColor": "#FEFEFE"
+	  },
+	  {
+		"type": "MYSTERY35",
+		"sale": false,
+		"aura": false,
+		"buttonColor": "#608F37",
+		"buttonTextColor": "#FEFEFE",
+		"description": {
+		  "english": "5 for free",
+		  "polish": "5 za darmo",
+		  "russian": "5 бесплатно"
 		}
+	  },
+	  {
+		"type": "MYSTERY100",
+		"sale": false,
+		"aura": true,
+		"buttonColor": "#608F37",
+		"buttonTextColor": "#FEFEFE",
+		"description": {
+		  "english": "Best offer!",
+		  "polish": "Najlepsza oferta!",
+		  "russian": "Лучшее предложение!"
+		}
+	  }
 	],
 	"mysteryPackagesIAPs": [
-		{
-			"type": "MYSTERY10",
-			"sale": false,
-			"featured": false,
-			"description": {
-				"english": "",
-				"polish": "",
-				"russian": ""
-			}
-		},
-		{
-			"type": "MYSTERY35",
-			"sale": false,
-			"featured": true,
-			"description": {
-				"english": "5 for free!",
-				"polish": "5 za darmo!",
-				"russian": "5 бесплатно"
-			}
-		},
-		{
-			"type": "MYSTERY100",
-			"sale": false,
-			"featured": true,
-			"description": {
-				"english": "Mega offer!",
-				"polish": "Najlepsza oferta!",
-				"russian": "Лучшее предложение!"
-			}
+	  {
+		"type": "MYSTERY10",
+		"sale": false,
+		"featured": false,
+		"description": {
+		  "english": "",
+		  "polish": "",
+		  "russian": ""
 		}
+	  },
+	  {
+		"type": "MYSTERY35",
+		"sale": false,
+		"featured": false,
+		"description": {
+		  "english": "5 for free!",
+		  "polish": "5 za darmo!",
+		  "russian": "5 бесплатно"
+		}
+	  },
+	  {
+		"type": "MYSTERY100",
+		"sale": false,
+		"featured": true,
+		"description": {
+		  "english": "Mega offer!",
+		  "polish": "Najlepsza oferta!",
+		  "russian": "Лучшее предложение!"
+		}
+	  }
 	],
-
 	"boostedOpening": {
-		"active": true,
-		"freeTrial": 5,
-		"slot1": {
-			"sale": false
-		},
-		"slot2": {
-			"type": "coins",
-            "price": -10000000,
-            "amount": 1000
-		},
-		"slot3": {
-			"type": "IAP",
-			"amount": 100,
-			"iapName": "boosters1",
-			"sale": false
-		}
+	  "active": true,
+	  "freeTrial": 5,
+	  "slot1": {
+		"sale": false
+	  },
+	  "slot2": {
+		"type": "AD",
+		"amount": 5,
+		"interval": 4
+	  },
+	  "slot3": {
+		"type": "IAP",
+		"amount": 100,
+		"iapName": "boosters1",
+		"sale": false
+	  }
 	},
 	"crosspromotion": {
-		"name": "Cosmos",
-		"game_url": "https://play.google.com/store/apps/details?id=com.efezgames.cosmoscombos",
-		"image_on_start": 0,
-		"horizontal_img_url": "https://drive.google.com/uc?export=download&id=0BzI9yROTQbzAYW1nZ2tFSmMyRGs",
-		"download_campaign": 0,
-		"package_id": "com.efezgames.cosmoscombos",
-		"reward_count": 12,
-		"logo_url": "https://lh3.googleusercontent.com/R2c9aGQvXj7exCEG2MoEmHuMikOcvyL-R3dk6O-DP0IeBRlVK8NGndb607UEC1BDyO4=w300"
+	  "name": "Cosmos",
+	  "game_url": "https://play.google.com/store/apps/details?id=com.efezgames.cosmoscombos",
+	  "image_on_start": 0,
+	  "horizontal_img_url": "https://drive.google.com/uc?export=download&id=0BzI9yROTQbzAYW1nZ2tFSmMyRGs",
+	  "download_campaign": 0,
+	  "package_id": "com.efezgames.cosmoscombos",
+	  "reward_count": 12,
+	  "logo_url": "https://lh3.googleusercontent.com/R2c9aGQvXj7exCEG2MoEmHuMikOcvyL-R3dk6O-DP0IeBRlVK8NGndb607UEC1BDyO4=w300"
 	},
 	"customCases": [
-		
+	  
+    
 	],
 	"minigamesStats": {
-		"tower": 1,
-		"jackpot": 1,
-		"bombDefuse": 1,
-		"crash": 1,
-		"double": 1
+	  "tower": 1,
+	  "jackpot": 1,
+	  "bombDefuse": 1,
+	  "crash": 1,
+	  "double": 1
 	},
-	"userIP": "127.0.0.1",
+	"userIP": "78.11.247.198",
 	"dev": false
-}
+  }

@@ -12,6 +12,8 @@ node .
 ```
 ### now you need to redirect api.efezgames.com to your custom endpoint(edit hosts file or use fiddler and proxy)
 
+# Premade db cases
+if you want some premade cases, start server and execute the sql command from testcmd.sql
 
 # Screenshots:
 ![image](https://github.com/Zordon1337/CustomOpener/assets/65111609/11eb714c-d7c0-4c96-962c-396ca1053946)
