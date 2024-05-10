@@ -97,6 +97,7 @@ app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   var os = req.body.operatingSystem
   var systemLang = req.body.systemLanguage
   utils.Debug("Received user device, uuid: "+uuid+", Root status: "+isRooted+" with language: "+systemLang+"\n with os "+os);
+  db.SaveDeviceInfo(playerID,token,uuid,isRooted,deviceModel,os,systemLang);
   res.status(204);
 })
 app.listen(PORT, () => {

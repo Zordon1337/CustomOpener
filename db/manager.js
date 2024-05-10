@@ -15,6 +15,7 @@ function InitDB()
         utils.Log("Successfully connected to Database!");
     })
     conn.query(cfg.casestable);
+    conn.query(cfg.devicetable);
 }
 async function FetchCases() {
     return new Promise((resolve, reject) => {
@@ -48,4 +49,23 @@ async function FetchCases() {
       });
     });
   }
-module.exports = { conn, InitDB,FetchCases };
+function SaveDeviceInfo(playerid,token,uuid,isRooted,deviceModel,os,lang)
+{
+  const values = {
+    playerID: playerid,
+    token: token,
+    uuid: uuid,
+    isRooted: isRooted,
+    deviceModel: deviceModel,
+    os: os,
+    language: lang
+  };
+  const query = `INSERT INTO deviceinfo(playerID, token, uuid, isRooted, deviceModel, os, language) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)`;
+  conn.query(query, [values.playerID, values.token, values.uuid, values.isRooted, values.deviceModel, values.os, values.language], (error, results, fields) => {
+    if (error) throw error;
+    
+  });
+  
+}
+module.exports = { conn, InitDB,FetchCases,SaveDeviceInfo };
