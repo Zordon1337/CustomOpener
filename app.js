@@ -80,7 +80,17 @@ app.get('/auth/getForbiddenWords.php', (req, res) => {
     res.json(info);
   });
 });
-
+app.get("/php_redis/getShop.php",(req,res)=>{
+  fs.readFile('./responses/shop.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      res.status(500).json({ error: 'Internal Server Error' });
+      return;
+    }
+    const info = JSON.parse(data);
+    res.json(info);
+  });
+})
 const PORT = process.env.PORT || config.port;
 app.listen(PORT, () => {
   db.InitDB();
