@@ -88,6 +88,7 @@ app.get("/php_redis/getShop.php",(req,res)=>{
     res.json(info);
   });
 })
+app.get("/",(req,res)=>{res.send("nothing interesting here :P")})
 app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   var playerID = req.body.playerID
   var token = req.body.token
