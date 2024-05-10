@@ -1,11 +1,11 @@
 const express = require('express');
 const fs = require('fs');
-
 const app = express();
 const config = require("./config.json");
 const db = require("./db/manager.js");
 const json5 = require("json5");
-
+const utils = require("./Utils.js");
+const PORT = process.env.PORT || config.port;
 async function generateJSON() {
   try {
     const jsonData = await db.FetchCases(); 
@@ -15,7 +15,6 @@ async function generateJSON() {
     throw error; 
   }
 }
-
 async function LoadCustomCases(info, res) {
   try {
     const jsonData = await generateJSON(); 
@@ -47,12 +46,11 @@ async function LoadCustomCases(info, res) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 }
-
 app.use((req, res, next) => {
   console.log(`Path: ${req.path}, Time: ${new Date().toISOString()}`);
   next();
 });
-
+app.use(express.urlencoded({ extended: true }));
 app.get('/getInfo.php', (req, res) => {
   fs.readFile('./responses/info.json', 'utf8', (err, data) => {
     if (err) {
@@ -68,7 +66,6 @@ app.get('/getInfo.php', (req, res) => {
     }
   });
 });
-
 app.get('/auth/getForbiddenWords.php', (req, res) => {
   fs.readFile('./responses/forbiddenwords.json', 'utf8', (err, data) => {
     if (err) {
@@ -91,8 +88,18 @@ app.get("/php_redis/getShop.php",(req,res)=>{
     res.json(info);
   });
 })
-const PORT = process.env.PORT || config.port;
+app.post("/v1/users/sendDeviceInfo",(req,res)=>{
+  var playerID = req.body.playerID
+  var token = req.body.token
+  var uuid = req.body.uuid
+  var isRooted = req.body.isRooted
+  var deviceModel = req.body.deviceModel
+  var os = req.body.operatingSystem
+  var systemLang = req.body.systemLanguage
+  utils.Debug("Received user device, uuid: "+uuid+", Root status: "+isRooted+" with language: "+systemLang+"\n with os "+os);
+  res.status(204);
+})
 app.listen(PORT, () => {
   db.InitDB();
-  console.log(`Server is running on port ${PORT}`);
+  utils.Log(`Server is running on port ${PORT}`);
 });

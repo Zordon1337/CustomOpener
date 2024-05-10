@@ -1,5 +1,6 @@
 const mysql = require('mysql');
 const cfg = require("../config.json")
+const utils = require("../Utils");
 const conn = mysql.createConnection({
   host: cfg.dbhost,
   user: cfg.dbuser,
@@ -11,7 +12,7 @@ function InitDB()
 {
     conn.connect(function(err){
         if (err) throw err;
-        console.log("Successfully connected to Database!");
+        utils.Log("Successfully connected to Database!");
     })
     conn.query(cfg.casestable);
 }
