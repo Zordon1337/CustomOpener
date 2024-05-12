@@ -68,18 +68,21 @@ function SaveDeviceInfo(playerid,token,uuid,isRooted,deviceModel,os,lang)
   });
   
 }
-async function GetCasesAmount()
-{
+function GetCasesAmount(callback) {
   conn.query("SELECT COUNT(*) AS rowCount FROM cases", (error, results, fields) => {
     if (error) {
       console.error('Error counting rows:', error);
+      callback(error, null);
     } else {
       if (results && results.length > 0) {
-        var rowCount = results[0].rowCount;
+        const rowCount = results[0].rowCount;
         console.warn(rowCount);
-        return results[0].rowCount;
+        callback(null, rowCount);
+      } else {
+        callback(null, 0); // Return 0 if no rows found
       }
     }
   });
 }
+
 module.exports = { conn, InitDB,FetchCases,SaveDeviceInfo,GetCasesAmount };
