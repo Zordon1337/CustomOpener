@@ -5,7 +5,10 @@ const config = require("./config.json");
 const db = require("./db/manager.js");
 const json5 = require("json5");
 const utils = require("./Utils.js");
+const path = require("path")
 const PORT = process.env.PORT || config.port;
+var loggedin = 0;
+var serverstarttimestamp = 0;
 async function generateJSON() {
   try {
     const jsonData = await db.FetchCases(); 
@@ -51,7 +54,10 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.urlencoded({ extended: true }));
+app.set("Static","./static");
+app.set("static","./static"); // not sure which one works
 app.get('/getInfo.php', (req, res) => {
+  loggedin++;
   fs.readFile('./responses/info.json', 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
@@ -88,7 +94,30 @@ app.get("/php_redis/getShop.php",(req,res)=>{
     res.json(info);
   });
 })
-app.get("/",(req,res)=>{res.send("nothing interesting here :P")})
+app.get("/",(req,res)=>{
+  fs.readFile('./static/index.html', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      res.status(500).json({ error: 'Internal Server Error' });
+      return;
+    }
+    
+    
+    res.send(data.replace("%userlogs%",loggedin).replace("%serverruntime%", Date.now()-serverstarttimestamp/1000));
+  });
+})
+app.get("/index.html",(req,res)=>{
+  fs.readFile('./static/index.html', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      res.status(500).json({ error: 'Internal Server Error' });
+      return;
+    }
+    
+    res.send(data.replace("%userlogs%",loggedin).replace("%serverruntime%",(Date.now()-serverstarttimestamp)/1000));
+  });
+})
+app.get("/style.css",(req,res)=>{res.sendFile(path.resolve("./static/style.css"))})
 app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   var playerID = req.body.playerID
   var token = req.body.token
@@ -105,6 +134,7 @@ app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   res.status(204);
 })
 app.listen(PORT, () => {
+  serverstarttimestamp = Date.now();
   db.InitDB();
   utils.Log(`Server is running on port ${PORT}`);
 });
