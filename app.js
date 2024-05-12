@@ -103,7 +103,9 @@ app.get("/",(req,res)=>{
     }
     
     
-    res.send(data.replace("%userlogs%",loggedin).replace("%serverruntime%", Date.now()-serverstarttimestamp/1000));
+    res.send(data.replace("%userlogs%", loggedin)
+                   .replace("%serverruntime%", (Date.now() - serverstarttimestamp) / 1000)
+                   .replace("%cases%", db.GetCasesAmount()));
   });
 })
 app.get("/index.html",(req,res)=>{
@@ -114,7 +116,7 @@ app.get("/index.html",(req,res)=>{
       return;
     }
     
-    res.send(data.replace("%userlogs%",loggedin).replace("%serverruntime%",(Date.now()-serverstarttimestamp)/1000));
+    res.send(data.replace("%userlogs%",loggedin).replace("%serverruntime%",(Date.now()-serverstarttimestamp)/1000).replace("%cases%",db.GetCasesAmount()));
   });
 })
 app.get("/style.css",(req,res)=>{res.sendFile(path.resolve("./static/style.css"))})
