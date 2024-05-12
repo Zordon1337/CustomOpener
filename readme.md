@@ -5,6 +5,7 @@ i need to make proper readme some day
 ```
 git clone https://github.com/Zordon1337/CustomOpener
 cd CustomOpener
+cd src
 npm install
 cp example_config.json config.json
 nano config.json // edit it how you want
