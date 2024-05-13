@@ -20,14 +20,14 @@ function DrawCases(callback)
         if (error) {
           cases = ("Error: " + error.message);
         } else {
-          let tableHtml = "<table align='center'><tr><th>ID</th><th>Skins</th><th>Description</th></tr>";
+          let tableHtml = "<table align='center'><tr><th>Case Type</th><th>Case ID</th><th>Skin | Chances </th>";
           cases.forEach((item) => {
             var skins = JSON.parse(item.skins);
             var htmlskins = "";
             skins.forEach((skin)=>{
-                htmlskins += `${skin.weapon} | ${skin.skin} ${skin.chances}% <br/>`;
+                htmlskins += `${skin.weapon} | ${skin.skin} | ${skin.chances}% <br/>`;
             });
-            tableHtml += `<tr><td>${item.id}</td><td>${htmlskins}</td><td>${item.description}</td></tr>`;
+            tableHtml += `<tr><td>${item.type}</td><td>${item.id}</td><td>${htmlskins}</td></tr>`;
           });
           tableHtml += "</table>";
           callback(null,tableHtml);
