@@ -7,6 +7,7 @@
     <style>
         @import url("editor.css");
     </style>
+    
 </head>
 <body>
     
@@ -16,11 +17,44 @@
         <br/>
         <p>New Json</p>
         <div class="editor">
-            <textarea name="json" value="%jsonvalue%"></textarea>
+            <textarea name="json" id="jsonarea" value="%jsonvalue%"></textarea>
         </div>
         <br>
+        
         <input type="submit" value="Save"/>
     </form>
-    
+    <button onclick="retreive()">
+        Retreive skins json
+    </button>
+    <script>
+        function retreive()
+        {
+            fetch('/getInfo.php')
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                const desiredId = document.getElementsByName("caseid")[0].value;
+                console.log(desiredId);
+                const customCase = data.customCases.find(caseItem => caseItem.id === desiredId);
+
+                if (customCase) {
+                const skins = customCase.skins;
+
+                skins.forEach(skin => {
+                    const inputElement = document.getElementById("jsonarea");
+                    if (inputElement) {
+                    inputElement.value = `${JSON.stringify(skin)}`;
+                    }
+                });
+                } else {
+                console.log('Custom case with the desired ID not found');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        }
+    </script>
 </body>
 </html>
