@@ -10,6 +10,8 @@ textarea {
     border: 2px solid yellow;
     color:white;
     background-color: darkcyan;
+    min-width: 500px;
+    min-height: 200px;
 }
 input {
     color:white;
