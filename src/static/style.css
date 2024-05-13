@@ -5,11 +5,22 @@ body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     text-align: center;
-    padding: 70px 0;
 }
 div {
     border: 2px solid white;
+    background-color:green;
+    max-width: 50%;
+    margin-left: 50vh;
 }
 table td {
     border: 2px solid white;
+    min-width: 10vh;
+}
+.editorbtn {
+    width: 200px;
+    height: 100px;
+    background-color:dodgerblue;
+    color:white;
+    border: 5px solid green;
+    font-size: 24px;
 }
