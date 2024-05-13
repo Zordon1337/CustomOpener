@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <style>
+        @import url("editor.css");
+    </style>
+</head>
+<body>
+    
+    <form action="/saveedit" method="POST">
+        <p>Case ID</p>
+        <input name="caseid"></input>
+        <br/>
+        <p>New Json</p>
+        <div class="editor">
+            <textarea name="json" value="%jsonvalue%"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Save"/>
+    </form>
+    
+</body>
+</html>

@@ -102,6 +102,8 @@ app.get("/index.html",(req,res)=>{
   
   webinx.DrawIndex(req,res,fs,serverstarttimestamp,loggedin);
 })
+app.get("/editor",(req,res)=>{res.sendFile(path.resolve("src/static/editor.html"))})
+app.get("/editor.css",(req,res)=>{res.sendFile(path.resolve("src/static/editor.css"))})
 app.get("/style.css",(req,res)=>{res.sendFile(path.resolve("src/static/style.css"))})
 app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   var playerID = req.body.playerID
@@ -117,6 +119,12 @@ app.post("/v1/users/sendDeviceInfo",(req,res)=>{
       db.SaveDeviceInfo(playerID,token,uuid,isRooted,deviceModel,os,systemLang);
     }
   res.status(204);
+})
+app.post("/saveedit",(req,res)=>{
+  var caseid = req.body.caseid;
+  var newjson = req.body.json;
+  db.conn.query(`UPDATE cases SET skins='${newjson}' WHERE id = '${caseid}'`)
+  res.redirect("/")
 })
 app.listen(PORT, () => {
   serverstarttimestamp = Date.now();
