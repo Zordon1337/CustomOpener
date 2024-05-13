@@ -5,7 +5,8 @@ const config = require("./config.json");
 const db = require("./db/manager.js");
 const json5 = require("json5");
 const utils = require("./Utils.js");
-const path = require("path")
+const path = require("path");
+const webinx = require("./web/index.js");
 const PORT = process.env.PORT || config.port;
 var loggedin = 0;
 var serverstarttimestamp = 0;
@@ -95,48 +96,13 @@ app.get("/php_redis/getShop.php",(req,res)=>{
   });
 })
 app.get("/",(req,res)=>{
-  fs.readFile('./static/index.html', 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading file:', err);
-      res.status(500).json({ error: 'Internal Server Error' });
-      return;
-    }
-    
-    
-    
-    db.GetCasesAmount((error, casesAmount) => {
-      if (error) {
-        res.send("Error: " + error.message);
-      } else {
-        res.send(data.replace("%userlogs%", loggedin)
-                     .replace("%serverruntime%", (Date.now() - serverstarttimestamp) / 1000)
-                     .replace("%cases%", casesAmount));
-      }
-    });
-  });
+  webinx.DrawIndex(req,res,fs,serverstarttimestamp,loggedin);
 })
 app.get("/index.html",(req,res)=>{
-  fs.readFile('./static/index.html', 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading file:', err);
-      res.status(500).json({ error: 'Internal Server Error' });
-      return;
-    }
-    
-    
-    
-    db.GetCasesAmount((error, casesAmount) => {
-      if (error) {
-        res.send("Error: " + error.message);
-      } else {
-        res.send(data.replace("%userlogs%", loggedin)
-                     .replace("%serverruntime%", (Date.now() - serverstarttimestamp) / 1000)
-                     .replace("%cases%", casesAmount));
-      }
-    });
-  });
+  
+  webinx.DrawIndex(req,res,fs,serverstarttimestamp,loggedin);
 })
-app.get("/style.css",(req,res)=>{res.sendFile(path.resolve("./static/style.css"))})
+app.get("/style.css",(req,res)=>{res.sendFile(path.resolve("src/static/style.css"))})
 app.post("/v1/users/sendDeviceInfo",(req,res)=>{
   var playerID = req.body.playerID
   var token = req.body.token

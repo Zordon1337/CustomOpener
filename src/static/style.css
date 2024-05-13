@@ -10,3 +10,6 @@ body {
 div {
     border: 2px solid white;
 }
+table td {
+    border: 2px solid white;
+}
