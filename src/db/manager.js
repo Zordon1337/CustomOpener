@@ -76,7 +76,6 @@ function GetCasesAmount(callback) {
     } else {
       if (results && results.length > 0) {
         const rowCount = results[0].rowCount;
-        console.warn(rowCount);
         callback(null, rowCount);
       } else {
         callback(null, 0); // Return 0 if no rows found
