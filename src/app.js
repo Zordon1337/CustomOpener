@@ -59,7 +59,7 @@ app.set("Static","./static");
 app.set("static","./static"); // not sure which one works
 app.get('/getInfo.php', (req, res) => {
   loggedin++;
-  fs.readFile('./responses/info.json', 'utf8', (err, data) => {
+  fs.readFile('src/responses/info.json', 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
       res.status(500).json({ error: 'Internal Server Error' });
@@ -74,7 +74,7 @@ app.get('/getInfo.php', (req, res) => {
   });
 });
 app.get('/auth/getForbiddenWords.php', (req, res) => {
-  fs.readFile('./responses/forbiddenwords.json', 'utf8', (err, data) => {
+  fs.readFile('src/responses/forbiddenwords.json', 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
       res.status(500).json({ error: 'Internal Server Error' });
@@ -85,7 +85,7 @@ app.get('/auth/getForbiddenWords.php', (req, res) => {
   });
 });
 app.get("/php_redis/getShop.php",(req,res)=>{
-  fs.readFile('./responses/shop.json', 'utf8', (err, data) => {
+  fs.readFile('src/responses/shop.json', 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading file:', err);
       res.status(500).json({ error: 'Internal Server Error' });
